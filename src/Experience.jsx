@@ -7,12 +7,12 @@ import Car from './models/car';
 const Experience = () => {
     return (
         <>
-            <Canvas camera={{fov: 25}}>
+            <Canvas camera={{ fov: 25 }}>
                 <ambientLight intensity={2} />
                 <Environment preset={'city'} />
                 <Perf position={'top-left'} />
                 <CameraControls />
-                <Car/>
+                <Car />
             </Canvas>
         </>
     );
