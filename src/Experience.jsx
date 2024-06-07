@@ -3,16 +3,24 @@ import { Canvas } from '@react-three/fiber';
 import { Perf } from 'r3f-perf';
 
 import Car from './models/car';
+import Grass from './models/grass';
+import Lamp from './models/Lamp';
+import Road from './models/road';
 
 const Experience = () => {
     return (
         <>
-            <Canvas camera={{ fov: 25 }}>
+            <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
                 <ambientLight intensity={2} />
                 <Environment preset={'city'} />
                 <Perf position={'top-left'} />
                 <CameraControls />
-                <Car />
+                <group>
+                    <Car />
+                    <Road />
+                    <Lamp />
+                    <Grass />
+                </group>
             </Canvas>
         </>
     );

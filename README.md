@@ -20,3 +20,9 @@ npm run build
 ### models
 
 "Ford Mustang 1965" (https://skfb.ly/oFE7V) by Pooya_dh is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+
+"Grass" by [@NITINKU68066640](https://sketchfab.com/Nicholas01) on Skechfab
+
+"Road* Avenue* street" (https://skfb.ly/oPLV6) by Mehdi Shahsavan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Old Fashioned Streetlamp" (https://skfb.ly/oIoFN) by ROY is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
