@@ -1,29 +1,31 @@
-import { CameraControls } from '@react-three/drei';
+import { CameraControls, Environment } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import {Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Perf } from 'r3f-perf';
 
-import Car from './models/car';
-// import Grass from './models/grass';
-import Lamp from './models/Lamp';
-import Road from './models/road';
+import Bench from './models/Bench.jsx';
+import Car from './models/Car.jsx';
+import Lamp from './models/Lamp.jsx';
+import Railing from './models/Railing.jsx';
+import Road from './models/Road.jsx';
+import Tree from './models/Tree.jsx';
 
 const Experience = () => {
     return (
         <>
-            <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+            <Canvas camera={{ fov: 25, position: [35, 20, 30] }}>
                 <color attach="background" args={['#0f0f0f']} />
                 <Perf position={'top-left'} />
                 <CameraControls />
-                <EffectComposer disableNormalPass multisampling={8}>
-                
-                {/* <Bloom luminanceThreshold={0} mipmapBlur luminanceSmoothing={0.5} intensity={2} /> */}
-                </EffectComposer>
+                <ambientLight intensity={0.3} />
+                <Environment preset="night" />
+
                 <group>
                     <Car />
                     <Road />
                     <Lamp />
-                    {/* <Grass /> */}
+                    <Bench />
+                    <Railing />
+                    <Tree />
                 </group>
             </Canvas>
         </>

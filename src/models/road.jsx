@@ -1,14 +1,22 @@
 import { useGLTF } from '@react-three/drei';
+
 const Road = (props) => {
     const { nodes, materials } = useGLTF('./assets/road.glb');
+
+    console.log(materials.Polygon_1);
     return (
         <group {...props} dispose={null}>
             <mesh
                 castShadow
                 receiveShadow
-                geometry={nodes.Road.geometry}
+                geometry={nodes.ground.geometry}
                 material={materials.Polygon_1}
-                position={[0.332, 0.024, 0]}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Circle.geometry}
+                material={materials['PBR Plowed Field Photogrammetry 8K']}
             />
         </group>
     );
