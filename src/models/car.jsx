@@ -12,7 +12,7 @@ const Car = (props) => {
                 castShadow
                 receiveShadow
                 geometry={nodes.bottomLight.geometry}
-                material={materials.Front_light}
+                // material={materials.Front_light}
                 position={[-0.522, 0.911, -0.451]}
                 rotation={[-Math.PI / 2, 0, 0.389]}
                 scale={3.676}
@@ -21,7 +21,7 @@ const Car = (props) => {
                 castShadow
                 receiveShadow
                 geometry={nodes.bottomOrange.geometry}
-                material={materials['Material.010']}
+                // material={materials['Material.010']}
                 position={[-0.522, 0.911, -0.451]}
                 rotation={[-Math.PI / 2, 0, 0.389]}
                 scale={3.676}
@@ -300,7 +300,7 @@ const Car = (props) => {
                 castShadow
                 receiveShadow
                 geometry={nodes.topHeadlight.geometry}
-                material={materials.Head_Light}
+                // material={materials.Head_Light}
                 position={[-0.522, 0.911, -0.451]}
                 rotation={[-Math.PI / 2, 0, 0.389]}
                 scale={3.676}
@@ -309,7 +309,7 @@ const Car = (props) => {
                 castShadow
                 receiveShadow
                 geometry={nodes.topOrange.geometry}
-                material={materials['Realistic Procedural Road']}
+                // material={materials['Realistic Procedural Road']}
                 position={[-0.522, 0.911, -0.451]}
                 rotation={[-Math.PI / 2, 0, 0.389]}
                 scale={3.676}

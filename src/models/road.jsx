@@ -3,7 +3,6 @@ import { useGLTF } from '@react-three/drei';
 const Road = (props) => {
     const { nodes, materials } = useGLTF('./assets/road.glb');
 
-    console.log(materials.Polygon_1);
     return (
         <group {...props} dispose={null}>
             <mesh

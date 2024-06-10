@@ -1,5 +1,6 @@
 import { CameraControls, Environment } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
+// import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Perf } from 'r3f-perf';
 
 import Bench from './models/Bench.jsx';
@@ -18,6 +19,9 @@ const Experience = () => {
                 <CameraControls />
                 <ambientLight intensity={0.3} />
                 <Environment preset="night" />
+                {/* <EffectComposer disableNormalPass> */}
+
+                {/* <Bloom luminanceThreshold={3} mipmapBlur intensity={0.5}/> */}
 
                 <group>
                     <Car />
@@ -27,6 +31,7 @@ const Experience = () => {
                     <Railing />
                     <Tree />
                 </group>
+                {/* </EffectComposer> */}
             </Canvas>
         </>
     );
