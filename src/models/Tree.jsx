@@ -5,25 +5,25 @@ const Tree = (props) => {
 
     return (
         <group {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Tree.geometry}
-        material={materials['Leaf_01.001']}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Tree001.geometry}
-        material={materials['Trunk_01.001']}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Tree002.geometry}
-        material={materials.Petiole_01}
-      />
-    </group>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Tree.geometry}
+                material={materials['Leaf_01.001']}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Tree001.geometry}
+                material={materials['Trunk_01.001']}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Tree002.geometry}
+                material={materials.Petiole_01}
+            />
+        </group>
     );
 };
 
