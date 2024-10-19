@@ -21,6 +21,7 @@ const Lamp = (props) => {
                     luminanceThreshold={1.8}
                     luminanceSmoothing={0.25}
                     selection={[lampGlass]}
+                    intensity={0.5}
                 />
                 {/* <GodRays sun={lampGlass} blendFunction={BlendFunction.Screen} blur={true}/> */}
                 {/* <Bloom luminanceThreshold={3} mipmapBlur intensity={0.5}/> */}
@@ -38,7 +39,7 @@ const Lamp = (props) => {
                 receiveShadow
                 geometry={nodes.street_lamp_glass.geometry}
             >
-                <meshBasicMaterial color={[2.0, 2.0, 2.0]} />
+                <meshBasicMaterial color={[8.0, 2.0,1.0]} />
             </mesh>
             <LampLight light={light} />
         </group>

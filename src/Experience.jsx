@@ -1,7 +1,8 @@
-import { CameraControls, Environment } from '@react-three/drei';
+import { CameraControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Perf } from 'r3f-perf';
 
+import Lights from './Lights/light.jsx';
 import Bench from './models/Bench.jsx';
 import Car from './models/Car.jsx';
 import Lamp from './models/Lamp.jsx';
@@ -16,9 +17,7 @@ const Experience = () => {
                 <color attach="background" args={['#111111']} />
                 <Perf position={'top-left'} />
                 <CameraControls />
-                <ambientLight intensity={0.3} />
-                <Environment preset="night" />
-
+                <Lights />
                 <group>
                     <Car />
                     <Road />
